@@ -9,13 +9,17 @@
     
     <style>
     * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
+       ;
     }
 
     html body {
+        display: flex;
+        flex-direction: column;
         font-family: 'roboto', serif;
+    }
+
+    body {
+       margin: 0;
     }
 
     header, footer {
@@ -28,7 +32,7 @@
     }
 
     header {
-        justify-content: space-between; /* pushes logo left, nav right */
+        justify-content: space-between;
         align-items: center;
         padding: 20px;
         background-color: #1f2937;
@@ -52,9 +56,6 @@
     header .h2 {
         display: flex;
         flex-direction: row;
-        font-size: 48px;
-        color: #f9faf8;
-        font-weight: 900;
     }
 
     .placeholder {
@@ -68,6 +69,23 @@
         font-size: 14px;
     }
 
+    main #hero_container {
+        display: flex;
+        background-color: #1f2937;
+        color: #f9faf8;
+    }
+
+    main #hero_container .container {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    main #hero_container h1 {
+        font-size: 48px;
+        color: #f9faf8;
+        font-weight: 900;
+    }
+
     .container_main .container {
         height: 100px;
         width: 100px;
@@ -79,42 +97,44 @@
 </head>
 <body>
     <header>
-        <h2>Header logo</h2>
+    <h2>Header logo</h2>
     <nav>
         <ul class="nav-links">
             <li>header link one</li>
             <li>header link two</li>
             <li>header link three</li>
         </ul>
-</nav>
+    </nav>
     </header>
     <main>
-        <div id="hero">
-            <h1>This website is awesome</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste accusantium illum modi sunt, recusandae animi nemo at, consequuntur, quaerat ipsa. Nobis sunt hic facere repellendus voluptas aperiam enim reprehenderit.</p>
-            <button>Sign up</button>
-            <div class="placeholder">Place holder for image</div>
+        <div id="hero_container">
+            <div class="container">
+                <h1>This website is awesome</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste accusantium illum modi sunt, recusandae animi nemo at, consequuntur, quaerat ipsa. Nobis sunt hic facere repellendus voluptas aperiam enim reprehenderit.</p>
+                <button>Sign up</button>
+            </div>
         </div>
-        <h3>Some random information</h3>
-        <div class="container_main">
-            <div class="container" id="pic1"></div>
-            <div class="container" id="pic2"></div>
-            <div class="container" id="pic3"></div>
-            <div class="container" id="pic4"></div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
-        </div>
-        <div class="container" id="quote_container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non illo repellendus assumenda dignissimos eos quisquam earum iste labore, quasi a nobis molestias ab pariatur totam quae, repudiandae aspernatur repellat.</p>
-            <h5>-A random person</h5>
-        </div>
+        <div class="placeholder">Place holder for image</div>
+    <h3>Some random information</h3>
+    <div class="container_main">
+        <div class="container" id="pic1"></div>
+        <div class="container" id="pic2"></div>
+        <div class="container" id="pic3"></div>
+        <div class="container" id="pic4"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore alias quae asperiores veritatis. Dolore laudantium dolorem, quod sit ipsum quia eius nisi magni obcaecati omnis eligendi minima assumenda perspiciatis expedita!</p>
+    </div>
+    <div class="container" id="quote_container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non illo repellendus assumenda dignissimos eos quisquam earum iste labore, quasi a nobis molestias ab pariatur totam quae, repudiandae aspernatur repellat.</p>
+        <h5>-A random person</h5>
+    </div>
         <div class="container">
             <b>Call to action! It's time!</b>
             <p>Up for product by clicking that button right there!</p>
-            <button>Sign up</button>
-        </div>
+        <button>Sign up</button>
+    </div>
     </main> 
     <footer>
         <p>Copyright © AfroSauce_vr 2025</p>
