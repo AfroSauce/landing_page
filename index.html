@@ -59,23 +59,30 @@
     }
 
     .placeholder {
-        width: 300px;
-        height: 150px;
+        flex-shrink: 0;
         background-color: gray;
+        width: 500px;
+        height: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: grey;
-        font-size: 14px;
+        color: #f9faf8;
+        font-size: 18px;
     }
 
-    main #hero_container {
+    #hero_container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
         background-color: #1f2937;
         color: #f9faf8;
+        padding: 80px 10%;
+        gap: 50px;
     }
 
     main #hero_container .container {
+        display: flex;
+        flex-direction: column;
         padding-left: 20%;
         padding-right: 20%;
     }
@@ -108,13 +115,20 @@
     </header>
     <main>
         <div id="hero_container">
-            <div class="container">
-                <h1>This website is awesome</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum iste accusantium illum modi sunt, recusandae animi nemo at, consequuntur, quaerat ipsa. Nobis sunt hic facere repellendus voluptas aperiam enim reprehenderit.</p>
-                <button>Sign up</button>
+            <div class="hero_text">
+                <h1>This website is awesome
+                </h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus soluta tempore eaque velit totam quaerat excepturi quam nesciunt accusamus consectetur praesentium consequatur mollitia vel amet obcaecati ad, dolorum, reiciendis deserunt.
+                    </p>
+                        <button>Sign up
+                        </button>
             </div>
+                <div class="placeholder">
+                    this is a placeholder for an image
+                </div>
         </div>
-        <div class="placeholder">Place holder for image</div>
+        
+        
     <h3>Some random information</h3>
     <div class="container_main">
         <div class="container" id="pic1"></div>
